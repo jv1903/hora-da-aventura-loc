@@ -20,7 +20,7 @@ header{
 }
 nav{
     background-color: #F7cd23;
-    padding: 10px 150px;
+    padding: 10px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,30 +54,169 @@ nav li a{
 nav li a:hover{ 
     background-color: white;
 }
+.logo .logotxt{
+  margin-right: -100px;
+}
 .logo img{
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
-.logotxt{
-    display: flex;
-    align-items: center;
-    font-family: 'inter', sans-serif;
+.logo{
+  display: flex;
+  align-items: center;
+  font-family: 'inter', sans-serif;
 }
-.logotxt h1{
-    color: #fff;
-    padding-right: 410px;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Poppins', sans-serif;
+.logo h1{
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-.logotxt a{
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    transition: 0.3s;
+.logo a{
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
 }
-.logotxt a:hover{
-    color: #007bff;
+.logo a:hover{
+  color: #007bff;
+}
+
+#txt{
+  margin-left: 18px;
+}
+.logo h1{
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+.logo a{
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.logo a:hover{
+  color: #007bff;
+}
+
+nav ul.show {
+  display: flex;
+  flex-direction: column;
+  background-color: #F7cd23;
+  position: absolute;
+  top: 60px; /* Ajuste conforme necessário */
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav ul.show li {
+  margin-left: 0;
+  text-align: center;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
   }
+
+  @media (min-width: 960px) {
+      .hide-on-desktop {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 960px) {
+      .navbar-links {
+        opacity: 0;
+        transform: translateY(-140%);
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    
+        flex-direction: column;
+        background-color: #202024;
+        box-shadow: rgb(0 0 0 / 75%) 0px 13px 30px -12px;
+        padding: 32px 0;
+        border-top: outset;
+        gap: 0;
+        z-index: -1;
+      
+        transition: 0.5s;
+      }
+    
+      .navbar-links.show {
+        opacity: 1;
+        top: 100%;
+        transform: translateY(0);
+      }
+    
+      .navbar-links li {
+        text-align: center;
+      }
+    
+      .navbar-links li a {
+        line-height: 40px;
+        width: 100%;
+        display: block;
+      }
+    
+      .menu-hamb-button {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-left: 50%;
+      }
+    
+      .btn-line {
+        width: 24px;
+        height: 3px;
+        background: #e1e1e6;
+        transition: 0.3s;
+      }
+    
+      .menu-hamb-button.isOpen .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+    
+      .menu-hamb-button.isOpen .btn-line:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .menu-hamb-button.isOpen .btn-line:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+      }
+    
+      .menu-overlay {
+        position: unset;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: -2;
+      }
+      
+      .menu-overlay.show {
+        position: fixed;
+      }
+    }
+}
 
 /*main*/ 
 
@@ -179,104 +318,94 @@ main{
         width: 80%;
         margin-right: 3%;
         
+        
       }
+      
   }
 
 
 
 /*footer*/
 
-footer{
-    width: 100%;
-    height: 300px;
-    background-color: #fff;
-}
-.logosenac{
-    width: 100px;
-    height: 100px;
-
-}
-.logonasa{
-    width: 100px;
-    height: 100px;
-}
-h2{
-    font-family: 'Times New Roman', Times, serif;
-    padding-top: 10px;
-}
-.box1{
-    width: 33%;
-    height: auto;
-    display: block;
-    float: left;
-}
-.box2{
-    width: 33%;
-    height: auto;
-    display: block;
-    float: left;
-}
-.box3{
-    width: 33%;
-    height: auto;
-    display: block;
-    float: left;
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.box3 ul{
-    padding-top: 15px;
-}
-.box3 ul a{
-    padding-top: 15px;
-}
-.box3{
-    padding-top: 10px;
-}
-h1{
-    font-size: 20px;
-    font-family: papyrus;
-    padding: 10px;
-}
-.titulo{
-   font-size: 20px;
-   font-family:papyrus;
+.logo-hora {
+  max-width: 18%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-.ref{
-    font-size: 20px;
-    font-family:papyrus;
+.social-icons {
+  margin-top: 10px;
 }
 
-.h3{
-    padding: 10px;
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
 }
 
-footer ul li{
-    padding-top: 20px;
-}
-.geral { 
-    padding-top: 15px;
-}
-footer a{
-    padding-top: 20px;
+.social-title {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
-
-@media screen and (max-width: 768px) {
-
-    .footer{
-        display: block;
-        margin-bottom: 130px;
-
-    }
-    .footer ul li{
-        display: block;
-    }
-    .geral{
-        margin-bottom: 130px;
-    }
+.social-icons,
+.support-section {
+  margin-top: 30px;
 }
 
+.social-icons a,
+.support-section a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.social-title,
+.support-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.logo-selecta{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#bx{
+  margin-top: 20px;
+}
+
+/* responsivo */
+
+@media (max-width: 600px) {
+  footer {
+      position: static;
+      height: 100vh;
+  }
+  .logo-hora{
+    max-width: 80%;
+    margin-bottom: 20px;
+    margin-right: 1%;
+}
+  .logo-selecta{
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+}
+}
 
 
 .cards-wrapper {
@@ -290,7 +419,7 @@ footer a{
 
   
 
-  /*responsivo*/
+  /* responsivo navegação*/
 
   @media screen and (max-width: 768px) {
 
@@ -311,3 +440,6 @@ footer a{
     }
     
   }
+
+
+
