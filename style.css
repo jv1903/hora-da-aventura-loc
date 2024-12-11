@@ -145,6 +145,11 @@ nav ul.show li {
 
 
 @media screen and (max-width: 768px) {
+  nav{
+    padding: 12px 170px;
+  }
+
+  
   nav ul {
     display: none;
   }
@@ -159,7 +164,6 @@ nav ul.show li {
       .navbar-links {
         opacity: 0;
         transform: translateY(-140%);
-    
         position: absolute;
         top: 0;
         left: 0;
@@ -196,7 +200,7 @@ nav ul.show li {
         display: flex;
         flex-direction: column;
         gap: 6px;
-        margin-left: 50%;
+        
       }
     
       .btn-line {
@@ -415,22 +419,45 @@ main{
 
   }
   
-  /*responsivo*/ 
-
-  @media (min-width: 768px) {
-    .card img {
-      height: 11em;
+  /*RESPONSIVO MAIN */ 
+  
+  @media (max-width: 600px) {
+    main{
+      height: 1500px;
     }
-    .cards-wrapper {
-        width: 80%;
-        margin-right: 3%;
-        
-        
-      }
-      
+    
+   
   }
 
+  /*RESPONSIVO MAIN - CONTEÚDO EXTRA*/ 
+  
+  @media (max-width: 600px) {
+    .Content{
+      height: 900px;
+    }
+    .Content h1{
+      margin-left: 110px;
+    }
+   
+   
+    .Content #f2{
+      margin-top: 260px;
 
+    }
+    .Content #f3{
+      margin-top: 560px;
+
+    }
+  }
+
+  @media (max-width: 600px) {
+    .so2{
+      height: 750px;
+    }
+    .so2 .left2 {
+      width: 175%;
+    }
+  }
 
 /*footer*/
 
