@@ -4,6 +4,10 @@
     color: brown;
     color: #fff;
 }
+*{
+  padding: 0;
+  margin: 0;
+}
 html {
     scroll-behavior: smooth;
   }
@@ -34,6 +38,7 @@ nav ul{
     list-style: none;
     padding: 10px;
     margin-bottom: -5px;
+    margin-left: 430px;
 }
 nav li{
     margin-left: 7px;
@@ -130,6 +135,14 @@ nav ul.show li {
   margin: 4px 0;
   transition: 0.4s;
 }
+
+
+.w-100 {
+  margin-top: -130px;
+  width: 103% !important;
+  margin-left: -20px;
+}
+
 
 @media screen and (max-width: 768px) {
   nav ul {
@@ -240,6 +253,55 @@ main{
      
   }
   
+  main{
+    width: 100%;
+    height: 750px;
+    
+}
+.Content{
+    width: 100%;
+    height: 300px;
+    background-color: #f5ef52;
+}
+.Content h1{
+    align-items: center;
+    font-size: 20px;
+    margin-left: 540px;
+    padding-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    
+}  
+
+  .image-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding-top: 5px; 
+  }
+  
+  .image-container a {
+    display: block;
+    text-align: center;
+  }
+
+  .image-item {
+    text-align: center; 
+  }
+  
+  .image-container img {
+    width: 220px;
+    height: 205px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+  }
+
+  .image-container img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
 
   /*card antigo*/
 
@@ -310,15 +372,49 @@ main{
   }
 
 
-  #botaoWhats {
-    position: fixed;
-    left: 5;
-    top: 90%;
-    margin-top: -2.5em;
-    color: #FFF;
-    z-index: 9999;
-}
+  .so2{
+    width: 100%;
+    height: 400px;
+    max-width: 1263px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+    background-color: #f6f6f6;
+  }
+  
+  .so2 .right2{
+    overflow: hidden;
+    background-color: #f6f6f6;
+  
+  }
+  #i2{
+    width: 90%;
+    height: 80%;
+    float: right;
+    margin-top: 35px;
+    transition: 0.3s;
+    
+  }
+  
+  #i2:hover{
+    transform: scale(1.1);
+  }
+  .so2 .left2{
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    width: 105%;
+  }
+  .so2 .left2 .content2{
+    padding-right: 20px;
+    padding-bottom: 120px;
+    padding-left: 60px;
+    height: 400px;
+    margin-top: 30px;
+    text-align: justify;
 
+  }
+  
   /*responsivo*/ 
 
   @media (min-width: 768px) {
