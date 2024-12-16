@@ -184,6 +184,8 @@ nav ul.show li {
         opacity: 1;
         top: 100%;
         transform: translateY(0);
+        margin-left: 0px;
+
       }
     
       .navbar-links li {
@@ -200,6 +202,8 @@ nav ul.show li {
         display: flex;
         flex-direction: column;
         gap: 6px;
+        margin-left: 40px;
+
         
       }
     
@@ -433,31 +437,31 @@ main{
   
   @media (max-width: 600px) {
     .Content{
-      height: 900px;
+      height: 1000px;
     }
+    .image-container{
+      flex-direction: column;
+      margin-top: 100px;
+
+    }
+
     .Content h1{
-      margin-left: 110px;
-    }
-   
-  
-    .Content #f2{
-      margin-top: 260px;
-
-    }
-    .Content #f3{
-      margin-top: 560px;
-
+      margin-left: 0px;
     }
   }
 
   @media (max-width: 600px) {
     .so2{
-      height: 750px;
+      height: 670px;
     }
     .so2 .left2 {
       width: 175%;
     }
-
+    .so2 .right2 {
+      
+      margin-left: 173px;
+    }
+  
 
 
     /*FOTOS SLIDES!!*/
@@ -556,7 +560,8 @@ footer {
 @media (max-width: 600px) {
   footer {
       position: static;
-      height: 100vh;
+      margin-top: 45px;
+      height: 91vh;
   }
   .logo-hora{
     max-width: 80%;
