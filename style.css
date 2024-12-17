@@ -168,7 +168,7 @@ nav ul.show li {
         top: 0;
         left: 0;
         right: 0;
-    
+        margin-left: 0px;
         flex-direction: column;
         background-color: #202024;
         box-shadow: rgb(0 0 0 / 75%) 0px 13px 30px -12px;
